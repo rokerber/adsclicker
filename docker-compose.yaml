@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  ads-clicker:
+    # A sua imagem, enviada para o Docker Hub
+    image: k3rb3rdock/adsclicker:latest
+    
+    # Define o nome do container. Pode ser qualquer nome que você goste.
+    container_name: ads-clicker
+
+    # Esta política garante que o container vai reiniciar automaticamente
+    # em caso de falha, exceto se você o parar manualmente.
+    restart: unless-stopped
